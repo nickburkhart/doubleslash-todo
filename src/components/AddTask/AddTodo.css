@@ -1,0 +1,47 @@
+.app .add-todo-container {
+  padding: 10px 60px;
+}
+
+.app .add-todo-header {
+  font-family: 'Playfair Display';
+  font-size: 1.5em;
+  color: #555;
+  margin: 0 10px;
+}
+
+.app .input-group {
+  text-align: left;
+  padding: 10px 0;
+  color: #555;
+}
+
+.app .input-group .input-group-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display';
+}
+
+.app .input-group .input-group-field {
+  line-height: 2;
+  padding: 2px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.app .add-todo-button {
+  border: none;
+  font-family: 'Playfair Display';
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.4;
+  background: #222;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.app .add-todo-button:hover {
+  background-color: #444;
+}
