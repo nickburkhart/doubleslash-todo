@@ -20,4 +20,4 @@ The end goal is for you to create a new branch and add at least one feature.  Th
 
 At the risk of giving away too much, I feel that I should disclose this much:  the application has worked before.
 
-Try this: git branch -r
+If you need a hint: this file may have changed
