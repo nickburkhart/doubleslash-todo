@@ -5,7 +5,6 @@ import {
   MARK_TODO_AS_COMPLETE,
 } from '../actions/todos.js';
 import { guid } from '../helpers/util.js';
-import { fromJS } from 'immutable';
 
 const initialState = [];
 
@@ -21,8 +20,8 @@ export default function todos(state=initialState, action={}) {
           completed: false,
         }
       }
-    case 'DELETE_TODO':
-      return fromJS(state).delete(action.id).toJS();
+      const { [action.id]: removed, ...rest } = state;
+      return rest;
     case UPDATE_TODO_FIELD:
       return {
         ...state,
