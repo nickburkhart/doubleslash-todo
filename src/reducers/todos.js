@@ -10,7 +10,7 @@ const initialState = [];
 
 export default function todos(state=initialState, action={}) {
   switch (action.type) {
-    case 'CREATE_TODO':
+    case CREATE_TODO:
       const id = guid();
       return {
         [id]: {
@@ -20,6 +20,7 @@ export default function todos(state=initialState, action={}) {
           completed: false,
         }
       }
+    case DELETE_TODO:
       const { [action.id]: removed, ...rest } = state;
       return rest;
     case UPDATE_TODO_FIELD:
@@ -30,7 +31,7 @@ export default function todos(state=initialState, action={}) {
           [action.field]: action.value,
         }
       };
-    case 'MARK_TODO_AS_COMPLETE':
+    case MARK_TODO_AS_COMPLETE:
       return {
         ...state,
         [action.id]: {

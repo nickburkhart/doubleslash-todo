@@ -2,8 +2,6 @@ import { connect } from 'react-redux';
 
 import TodoItemView from './TodoItemView';
 import {
-  deleteTodo,
-  updateTodoField,
   markTodoAsComplete
 } from '../../actions/todos.js';
 
