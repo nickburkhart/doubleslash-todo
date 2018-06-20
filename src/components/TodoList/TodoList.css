@@ -1,0 +1,67 @@
+.app .todo-list {
+  margin-top: 10px;
+  border-top: 1px solid #bbb;
+}
+
+.app .ui-card.todo-item {
+  margin: 10px auto;
+  padding: 0;
+}
+
+.app .todo-item-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+  font-family: 'Playfair Display';
+}
+
+.app .todo-item-title-prefix {
+  margin-right: 10px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.app .todo-item-title-body {
+  flex: 1;
+}
+
+.app .todo-item-delete {
+  padding: 0 2px;
+}
+
+.app .todo {
+  background-color: #222;
+  color: #fff;
+}
+
+.app .done {
+  background-color: #32CD32;
+  color: #fff;
+}
+
+.app .todo-item-description {
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+}
+
+.app .mark-as-complete {
+  border: none;
+  font-family: 'Playfair Display';
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #30C430;
+  color: #fff;
+}
+
+.app .mark-as-complete:hover {
+  background-color: #38DF38;
+}
