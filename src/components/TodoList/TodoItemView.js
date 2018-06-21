@@ -25,6 +25,11 @@ class TodoItemView extends Component {
     return (
       <div className='todo-item ui-card'>
         <div className='todo-item-title'>
+          <img 
+            alt={`robot ${this.props.todo.title}`} 
+            className='todo-item-avatar' 
+            src={`https://robohash.org/${this.props.todo.title}.png?size=36x36`}
+          />
           <span className={spanClass}>{spanText}</span>
           <span className='todo-item-title-body'>{this.props.todo.title}</span>
           <button className='todo-item-delete' onClick={this.deleteTodoItem.bind(this)}>

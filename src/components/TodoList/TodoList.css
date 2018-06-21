@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.app .todo-item-avatar {
+  height: 36px;
+  width: 36px;
+}
 .app .todo-item-title {
   display: flex;
   align-items: center;
