@@ -6,7 +6,10 @@ import {
 } from '../actions/addTask.js';
 
 const initialState = {
-  newTask: {},
+  newTask: {
+    title: '',
+    description: ''
+  }
 }
 
 function newTask(state=initialState.newTask, action={}) {
