@@ -2,7 +2,12 @@ export const CREATE_TODO = 'CREATE_TODO';
 export function createTodo() {}
 
 export const DELETE_TODO = 'DELETE_TODO';
-export function deleteTodo() {}
+export function deleteTodo(id) {
+	return {
+		type: DELETE_TODO,
+		id
+	};
+}
 
 export const UPDATE_TODO_FIELD = 'UPDATE_TODO_FIELD';
 export function updateTodoField() {}

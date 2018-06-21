@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 
 import TodoItemView from './TodoItemView';
 import {
+  deleteTodo,
   markTodoAsComplete
 } from '../../actions/todos.js';
 
@@ -13,7 +14,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    completeItem: () => dispatch(markTodoAsComplete(ownProps.id))
+    completeItem: () => dispatch(markTodoAsComplete(ownProps.id)),
+    deleteTodoItem: () => dispatch(deleteTodo(ownProps.id))
   };
 }
 
