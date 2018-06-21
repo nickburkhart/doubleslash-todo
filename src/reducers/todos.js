@@ -6,13 +6,14 @@ import {
 } from '../actions/todos.js';
 import { guid } from '../helpers/util.js';
 
-const initialState = [];
+const initialState = {};
 
 export default function todos(state=initialState, action={}) {
   switch (action.type) {
     case CREATE_TODO:
       const id = guid();
       return {
+        ...state,
         [id]: {
           title: action.title,
           description: action.description,
