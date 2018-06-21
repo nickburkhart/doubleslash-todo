@@ -27,9 +27,9 @@ class TodoItemView extends Component {
         <div className='todo-item-title'>
           <span className={spanClass}>{spanText}</span>
           <span className='todo-item-title-body'>{this.props.todo.title}</span>
-          <div className='todo-item-delete' onClick={this.deleteTodoItem.bind(this)}>
+          <button className='todo-item-delete' onClick={this.deleteTodoItem.bind(this)}>
             <i className='material-icons'>clear</i>
-          </div>
+          </button>
         </div>
         <p className='todo-item-description'>{this.props.todo.description}</p>
         {this.renderButton()}
